@@ -44,3 +44,5 @@ calculator, Free tier, OCI SLA,
 - [FreeCodeCamp's Oracle Foundations Associate Cloud Certification](https://www.youtube.com/watch?v=si9tjcnxruU&ab_channel=freeCodeCamp.org)
 
 - [MyLearn Oracle University](https://mylearn.oracle.com/ou/learning-path/become-an-oci-foundations-associate-2023/122043)
+
+
