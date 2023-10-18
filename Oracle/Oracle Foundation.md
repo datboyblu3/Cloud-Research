@@ -61,3 +61,14 @@
 - They are available in every region you have access to
 - Compartments allows for 6 levels of nesting, this helps to keep your design cealn
 
+#### Principal
+- These are IAM entities that are allowed to interact with OCI resources
+- Two types are IAM Users and Resource Principals
+- Policies can be attached to a compartment (only adheres to resources within that compartment) or the tenancy (everything within the Tenancy)
+
+#### Tenancy Setup
+- Best practices:
+  - is to have an OCI admin to perform daily tasks
+  - This OCI admin should run this account, not the Tenancy admin
+  - Create dedicated compartments to isolate resources
+  - enforce the use of MFA
