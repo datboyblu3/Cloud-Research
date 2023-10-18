@@ -72,3 +72,5 @@
   - This OCI admin should run this account, not the Tenancy admin
   - Create dedicated compartments to isolate resources
   - enforce the use of MFA
+
+- OCI Admin should scope policies to all compartments
