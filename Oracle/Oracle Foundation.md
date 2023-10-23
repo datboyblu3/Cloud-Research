@@ -31,7 +31,7 @@
 #### Realm
 - A set of regions that share the same characteristics
 
-## Identity and Access Management
+## 4. Identity and Access Management
 
 ### What is OCI AIM?
 - IAM = Identity and Access Management Service
@@ -74,3 +74,16 @@
   - enforce the use of MFA
 
 - OCI Admin should scope policies to all compartments
+
+## 5. Networking
+
+### Virtual Cloud Networking - VCN
+ - A private software, defined network created in Oracle cloud
+ - Created to communicate with private, internal Oracle sources
+
+**Concepts to know** :
+- **Internet Gateway**: an optional gateway you can add to your VCN to enable direct connectivity to the internet.
+- **NAT Gateway**: a networking technique commonly used to give an entire private network access to the internet without assigning each host a public IPv4 address. The hosts can initiate connections to the internet and receive responses, but not receive inbound connections initiated from the internet
+- **Services Gateway**: A service gateway allows traffic to and from all subnets at the time of creation; there's no mechanism to block or disable this traffic.
+- **Dynamic Routing Gateway**: provides a path for private network traffic between the VCN and an on-premises network. This traffic is routed to the data center network and on to its destination.
+
