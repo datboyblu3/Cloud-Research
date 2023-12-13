@@ -7,8 +7,10 @@
 1.1 Understanding of basic cloud concepts
 Understand terms like Scalability, Elasticity, Agility,
 fault tolerance, and disaster recovery, CapEx, OpEx
+
 Understand and differentiate between IaaS, PaaS
 and SaaS
+
 Understand Public, private and hybrid cloud models
 Reduce TCO with migrations (on-prem to cloud
 without re-architecting)
