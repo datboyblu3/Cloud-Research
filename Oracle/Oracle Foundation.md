@@ -1,3 +1,5 @@
+# Oracle Cloud Infrastructure: From there Official Site
+
 ## Account and Access Concepts
 
 #### Tenancy
@@ -99,3 +101,21 @@
 - Use load balancers to achieve high availability and scalability
 - Layer 7 LB, HTTP/S
 - 
+
+# ExamPro OCI YouTubve Video 
+
+### Capitval vs Operational Expenditure
+
+**CAPEX (Capital Expenditure)**
+
+- Buidlings
+- Vehicles
+- Hardware
+- Equipment
+- Land
+
+**OPEX (Operational Expenditure)**
+
+- Products
+- Business
+- Systems
