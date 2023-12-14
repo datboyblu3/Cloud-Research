@@ -8,8 +8,6 @@
 
 #### Compartment
 
-
-
 ## OCI Architecture
 
 #### Regions
@@ -24,16 +22,22 @@
 #### Availability Domains
 - These are one or more data centers located within a region
 - They are isolated from each other, fault tolerant and unlikely to fail simultaneously
+- Need to be close enough to provide low-latency
 - Physical infrastructure is not shared
+- Is what OCI calls a datacenter
+- A region will generall contain 3 datacenters (ADs)
   
 #### Fault Domains
 - a group of hardware and infrastructure within an availability domain.
+- They are logical datacents - a virtual/abstrct datacenter within a physical datacenters
 - Each AD contains three fault domains
+- Primary purpose is to isolate groupings of hardware within a datacenter so they don't share a single point of failure
 - Allow you to distribute your instances/applications so that the instances are not on the same phyiscal hardware within a single AD
 - This offers redudancy
 - Instances within a fault domain are sandboxed from each other
 
 ![fault_domains2](https://github.com/datboyblu3/Cloud-Research/assets/95729902/22e95f8a-b465-4651-9f79-e3b23cfcecf0)
+
 
 #### Realm
 - A set of regions that share the same characteristics
@@ -138,6 +142,27 @@
 - cost effective, only pay for the time code is running, VMs only run when there is code to be executed
 - Cold starts is a side-effect of this setup
 
-### OCI Global Infrastructure
+### OCI Concepts
 
-**Regions**
+**Console**
+
+The console is the simple web-based user interface you can use to access and manage Oracle Cloud Infrastructure
+
+**Tenancy**
+
+Oracle creates a tenancy for your company, which is a secure and isolated partition within OCI where you can create, organize and administer your cloud resources
+
+**Compartments**
+
+- A logical collection of related resources that can be accessed only by certain groups that have been given permission by an admin
+
+- A *root compartment* is created when you signup, it holds all of your cloud resources
+
+- can nest compartments six levels deep
+- add/delete compartments whenever
+- not region specific, can group resources cross region
+- resources can be easliy moved to other compartments
+- compartment resources can interact with each other
+- can apply policies to compartment to determine user access
+- can associate a compartment to a budget for cost analysis
+
