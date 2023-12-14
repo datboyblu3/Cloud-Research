@@ -1,4 +1,4 @@
-# Oracle Cloud Infrastructure: From there Official Site
+# Notes from both Oracle's Official Course and ExamPro OCI YouTubve Video
 
 ## Account and Access Concepts
 
@@ -13,8 +13,13 @@
 ## OCI Architecture
 
 #### Regions
-- A region is a localized geographic area
+- A region is a localized geographic area that has many datacenters aka *Availability Domains*
 - Oracle cloud regions are globally distributed data centers that provide secure, high performance, local environments
+- Three kinds of regions:
+  - Commerical: any customer can launch resources in these regions
+  - Government: Only governments can launch resources in these regions
+  - Azure Connected: Some commercial regions are connected to Azure
+- A region can be multiple places in the world 
 
 #### Availability Domains
 - These are one or more data centers located within a region
@@ -102,8 +107,6 @@
 - Layer 7 LB, HTTP/S
 - 
 
-# ExamPro OCI YouTubve Video 
-
 ### Capitval vs Operational Expenditure
 
 **CAPEX (Capital Expenditure)**
@@ -119,3 +122,22 @@
 - Products
 - Business
 - Systems
+
+**Containers**
+
+- docker deamon is the name of the software layer that lets you run multiple containers
+- containers share the same underlying OS, they're more efficient than multiple VMs
+- Multiple apps can run side by side without being limited to the same OS requirements and will not cause conflicts during resource sharing
+
+**Functions**
+
+- a managed VMs running managed containers
+- known as *Serverless Compute*
+- You upload a piece of code, choosing the amount of memory and duration
+- only responsible for code + data
+- cost effective, only pay for the time code is running, VMs only run when there is code to be executed
+- Cold starts is a side-effect of this setup
+
+### OCI Global Infrastructure
+
+**Regions**
