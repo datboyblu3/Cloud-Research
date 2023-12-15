@@ -166,3 +166,27 @@ Oracle creates a tenancy for your company, which is a secure and isolated partit
 - can apply policies to compartment to determine user access
 - can associate a compartment to a budget for cost analysis
 
+**Application Program Interface (API)**
+- A way to interact with cloud services programatically
+
+**Command Line Interface**
+- Allows you to access the API via the shell terminal program
+
+**CloudShell**
+- A web browser-based terminal accessible from the Oracle Cloud Console. Cloud Shell is free to use and provides access to a Linux shell, with a pre-authenticated Oracle Cloud Infrastructure CLI
+
+**Software Development Kit**
+- A set of programming librarues available in common languages to interact with Oracle Cloud Services
+
+## Core Services
+
+### Computing Services
+
+**Virtual Machines**
+A multi-tenant serving running a hypervisor layer. Share the ecost with other customers so you save
+
+**Container Engines**
+Docker as Service. Allows you to run docker containers on a virtual machine
+
+**Functions**
+Serverless compute. Code is designed to run for a short a period of time and you choose a managed container with runtime
