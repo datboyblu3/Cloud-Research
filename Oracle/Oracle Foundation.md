@@ -183,10 +183,19 @@ Oracle creates a tenancy for your company, which is a secure and isolated partit
 ### Computing Services
 
 **Virtual Machines**
-A multi-tenant serving running a hypervisor layer. Share the ecost with other customers so you save
+- A multi-tenant serving running a hypervisor layer. Share the ecost with other customers so you save
 
 **Container Engines**
-Docker as Service. Allows you to run docker containers on a virtual machine
+- Docker as Service. Allows you to run docker containers on a virtual machine
 
 **Functions**
-Serverless compute. Code is designed to run for a short a period of time and you choose a managed container with runtime
+- Serverless compute. Code is designed to run for a short a period of time and you choose a managed container with runtime
+
+**Dedicated Virtual Hosts**
+- A single tenant server that is running a hypervisor layer where you can run multiple 
+
+**Bare Metal**
+- A dedicated server that has no hypervisor layer
+- Allows you to provide your applications with direct access to the processor and memroy resources of the underlying server
+- Is suited for specialized workloads where hypervisor would hinder performance
+
