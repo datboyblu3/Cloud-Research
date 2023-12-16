@@ -199,3 +199,6 @@ Oracle creates a tenancy for your company, which is a secure and isolated partit
 - Allows you to provide your applications with direct access to the processor and memroy resources of the underlying server
 - Is suited for specialized workloads where hypervisor would hinder performance
 
+### Storage Services
+
+**Block Volume**
