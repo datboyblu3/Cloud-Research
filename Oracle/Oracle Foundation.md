@@ -110,6 +110,19 @@
 - Use load balancers to achieve high availability and scalability
 - Layer 7 LB, HTTP/S
 - 
+## 6. Compute
+
+**Virtual Machine**
+  - Shared, multi tenants
+  - Strong security, isolated hosts
+    
+**Bare Metal**
+ - You get a full machine/server 100% dedicated to you
+ 
+**Dedicated Hosts**
+  - Are also 100% dedicated to you
+  - Can run own VMs,
+  - VMs are privately owned
 
 ### Capitval vs Operational Expenditure
 
@@ -291,4 +304,6 @@ Two virtual firewall features are available that use security rules to control t
 - New virtual firewall feature designed for application components that have different security postures.
 - NSGs are supported only for specific services
 - Are directly associated with VCINs, regardless of subnet
+
+### Database Services
 
