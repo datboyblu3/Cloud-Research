@@ -202,3 +202,73 @@ Oracle creates a tenancy for your company, which is a secure and isolated partit
 ### Storage Services
 
 **Block Volume**
+- Similar to a local virtual hard drive.
+- Either HDD or SSD
+- Data is split into evenly split blocks directly accessed by the OS
+- Supports only a single write volume
+- Multiple VMs requires multiple block volumes - hard to share between VMs
+- Protocols in use are FC, iSCSI
+- Most expensive at scale
+
+**Local NVMe**
+- Non-Volatile-Memory-Express, a transfer protocol for SSD that allows the drives to operate very efficiently
+
+**File Storage**
+- Uses a file system NSFv3 allowing multiple connections to the same storage device at the same time
+- File is stored with data and metadata
+- Multiple connections via a network share
+- Supports multiple reads, writing locks the file
+- Uses NFS, SMB etc
+
+**Object Storage**
+- Serverless storage
+- Upload many files
+- Scales without worrying about running out of space or data loss
+- Object is stored with data, metadata and Unique ID
+- Scales with limited no file limit or storage limit
+- Supports multiple reads and writes (no locks)
+- Accessed over the internet
+- Protocols: HTTP/S, API
+- Least expensive at scale
+
+**Archive Storage**
+- Long-term cold storage
+- Files you need to keep around for years that you infrequently need to access at a fraction of the storage cost
+
+### Networking Services
+
+<img width="487" alt="Screenshot 2023-12-17 at 10 13 55 AM" src="https://github.com/datboyblu3/Cloud-Research/assets/95729902/81342813-1afc-41d5-ba9b-c2b59a3917b7">
+
+In this diagram, CA-TORONTO-1 will be the Region
+
+Virtual Firewall Options:
+- Security Rules
+- Network Security Groups
+- Security Lists
+  
+<img width="537" alt="Screenshot 2023-12-17 at 10 40 42 AM" src="https://github.com/datboyblu3/Cloud-Research/assets/95729902/51974a67-81f9-4a15-9f05-fa44c50cfe37">
+
+**Service Gateways**
+- A secure tunnel that keeps traffic within the OCI Network
+
+**NAT Gateway**
+- Let resources in a private subnet reach the internet
+
+**IPSec VPN**
+- A secure connection to your on-prem to Oracle Cloud
+
+**Fast Connect**
+- A dedicated secure connection to your on-prem to Oracle Cloud
+
+**Dynamic Routing Gateway**
+- A virtual router that provides a path for private traffic between your VCN and outside network
+
+**VCN Peering**
+- Create a network connection between VCNs
+
+### Virtual Cloud Networks and Subnets
+
+A VCN is a logically isolated section of the OCI Cloud where you can launch OCI resources. You choose a range of IPs using CIDR Range
+
+CIDR Range of 10.0.0.0/16 = 65,536 IPs
+
