@@ -272,3 +272,23 @@ A VCN is a logically isolated section of the OCI Cloud where you can launch OCI 
 
 CIDR Range of 10.0.0.0/16 = 65,536 IPs
 
+Subnets need to have a smaller CIDR range than the VCNs
+
+### Virtual Network Interface Card
+
+Enables an instance (server) to connect to a VCN and determines how the instance (server) connects with endpoints inside and outside the VCN.
+
+Without the VCIN, your instance (server) would not be able to communicate with the internet or other network cloud services.
+
+### Virtual Firewall Options
+
+Two virtual firewall features are available that use security rules to control traffic at the packet level. They are:
+
+**1. Security Lists(SLs)**
+-  Associated with subnets and the security rules apply to VCINs in those subnets
+
+**2. Network Security Groups(NSGs)**
+- New virtual firewall feature designed for application components that have different security postures.
+- NSGs are supported only for specific services
+- Are directly associated with VCINs, regardless of subnet
+
