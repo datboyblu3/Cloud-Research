@@ -307,3 +307,64 @@ Two virtual firewall features are available that use security rules to control t
 
 ### Database Services
 
+**VM DB Systems**
+- A virtual machien running a managed Oracle Database Instance
+- Uses Block Storage
+
+**VM BM Systems**
+- A Bare Metal machine running a managed Oracle Database Instance
+- Uses Fast Local Storage
+
+**Oracle RAC**
+- Oracle Databases running as a cluster. Shares the same disk but different instances running on different nodes
+- If a node fails, connection fails over to another node
+- Highly Available
+
+**Exadata DB Systems**
+- Exadata is a pre-configured combination of hardware and software that provides an infrastructure for running Oracle Database
+- Specalized Infrastructure
+
+**Autonomous**
+- Automatically patches, upgrades and self-healing bad data
+- Highly available by default, secure by default
+- Shared/Dedicated
+- Fully managed
+
+#### DB Systems Database Options
+
+- With Oracle DB Systems you choose your Availability Domain and Shape Type
+- With MySQL DB Systems, you choose the AD, Fault Domain and Shape Type
+
+#### Autonomous Database Options - Workload Types
+
+**OLAP**
+- Data Warehouse
+- Configures the database for a decision support or data warehouse workload, with a bias towards large data scanning operations
+- Reporting, analytics, large and infrequent queries
+
+**OLTP**
+- Transaction Processing
+- Configures the database for a transactional workload with a bias towards high volumes of a random data access
+
+**Shared Infrastructure**
+- Multi-tenant
+- Run Autonmous Database on shared Exadata infrastructure
+
+### Oracle NoSQL
+
+- Oracle NoSQL Database is a key/value store
+
+Use Oracle NoSQL when...
+- produce and consime data at high volume and velocity
+- require instanteous response time to match user expectations
+- developed with continuously evolving data models
+- scale on-demand based on the dynamic workloads
+
+### Cloud Native Services
+
+- Oracle API Gateway. A comprehensive platform for managing, delivering, and securing Web APIs
+- Oracle Streaming. Inget and store continuous, high-volume data streams and prcess them in real-time.
+- Oracle Kubernetes Container Engine. A managed service to run a Kubernetes Cluster
+- Oracle Registry. A repository for your docker containers
+- Oracle Notifications. A fully managed publish-subscribe service for reliable and scalable message delivery.
+- Oracle Integrations. A service to connect on-premise, third party to your OCI with premade adapaters for easy application integration.
